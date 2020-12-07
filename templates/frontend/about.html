@@ -1,0 +1,55 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block title%}
+Home
+{% endblock %}
+
+{% block content %}
+
+<!-- SITE BLOG STARTS HERE -->
+<div class="row">
+    <div class="col-md-8 col-sm-8">
+       <div class="row">
+           <div class="blog-content">
+             <div class="col-md-4 col-sm-6">
+            <img src="{% static 'frontend/images/mark.jpg' %}" class="img-circle img-responsive">
+            <div class="section-content">
+              <h2>Mark Zuckerbarg</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ratione, distinctio eius dolores facilis maiores minus itaque excepturi soluta quae assumenda iste nostrum neque culpa ad eveniet nihil debitis incidunt!
+              </p>
+              <a href="about-detail.html" class="btn btn-success">Readmore</a>
+            </div>
+          </div>
+          <!-- END OF MARK COL -->
+          <div class="col-md-4 col-sm-6">
+            <img src="{% static 'frontend/images/paul.jpg' %}" class="img-circle img-responsive">
+            <div class="section-content">
+              <h2>Paul Allen </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ratione, distinctio eius dolores facilis maiores minus itaque excepturi soluta quae assumenda iste nostrum neque culpa ad eveniet nihil debitis incidunt!
+              </p>
+              <a href="about-detail.html" class="btn btn-success">Readmore</a>
+            </div>
+          </div>
+          <!-- END OF MARK COL --> 
+          <div class="col-md-4 col-sm-6">
+            <img src="{% static 'frontend/images/mayer.jpg' %}" class="img-circle img-responsive">
+            <div class="section-content">
+              <h2>Marrisa Mayer </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ratione, distinctio eius dolores facilis maiores minus itaque excepturi soluta quae assumenda iste nostrum neque culpa ad eveniet nihil debitis incidunt!
+              </p>
+              <a href="about-detail.html" class="btn btn-success">Readmore</a>
+            </div>
+          </div>
+          <!-- END OF MAYER COL -->
+          
+           </div>
+        <!-- END BLOG CONTENT -->
+    </div>
+  </div>
+</div>
+{% endblock%}
